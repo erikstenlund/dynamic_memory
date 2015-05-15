@@ -85,9 +85,8 @@ void* realloc(void *ptr, size_t size)
 		}
 
 	} else {	//increase size of memory
-		printf("Realloc3\n");
 		void* mem = malloc(size);
-		memcpy(mem, r->data, r->size)
+		memcpy(mem, r->data, r->size);
 		
 		return mem;
 		
