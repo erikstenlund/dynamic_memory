@@ -3,7 +3,10 @@
 #include <string.h>
 #include <stdio.h>
 
+
 typedef struct list_t list_t;
+
+void free(void*);
 
 struct list_t {
 	size_t size;
