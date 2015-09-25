@@ -90,7 +90,7 @@ void* realloc(void *ptr, size_t size)
 	} else {	//increase size of memory
 		void* mem = malloc(size);
 		memcpy(mem, r->data, r->size);
-		
+		free(ptr); //VÄL? 	
 		return mem;
 		
 	}
